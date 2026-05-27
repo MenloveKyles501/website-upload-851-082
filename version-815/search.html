@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索筛选-热门电视剧大全-热播剧集大全片库-全集高清在线播放</title>
+  <meta name="description" content="搜索热门电视剧大全、热播剧集、高清剧集、地区、年份和题材标签。">
+  <meta name="keywords" content="电视剧搜索,剧集筛选,热播剧集搜索,热门电视剧大全,热播剧集,电视剧大全,高清剧集,全集播放,热门剧集,剧集片库">
+  <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="site-logo" href="./index.html" aria-label="高清剧集大全">
+      <span class="logo-mark">剧</span>
+      <span class="logo-text">
+        <strong>高清剧集大全</strong>
+        <small>热播剧集片库</small>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="主导航">
+      <a class="" href="./index.html">首页</a>
+<a class="" href="./categories.html">分类</a>
+<a class="" href="./ranking.html">排行榜</a>
+<a class="is-active" href="./search.html">搜索</a>
+      <div class="nav-dropdown">
+        <button type="button">剧集分类</button>
+        <div class="nav-dropdown-panel">
+          <a href="./category-hot-drama.html">热播剧集</a>
+<a href="./category-family-life.html">家庭伦理</a>
+<a href="./category-romance-youth.html">爱情青春</a>
+<a href="./category-suspense-detective.html">悬疑探案</a>
+<a href="./category-sci-fi-fantasy.html">科幻奇幻</a>
+<a href="./category-action-adventure.html">动作冒险</a>
+<a href="./category-comedy-healing.html">喜剧治愈</a>
+<a href="./category-costume-legend.html">古装传奇</a>
+<a href="./category-horror-folk.html">民俗惊悚</a>
+<a href="./category-reality-documentary.html">纪实现实</a>
+        </div>
+      </div>
+    </nav>
+    <form class="header-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索剧名、题材、地区" autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" data-menu-toggle aria-label="打开菜单" aria-expanded="false">☰</button>
+  </div>
+  <div class="mobile-panel" data-mobile-panel>
+    <div class="mobile-links">
+      <a class="" href="./index.html">首页</a>
+<a class="" href="./categories.html">分类</a>
+<a class="" href="./ranking.html">排行榜</a>
+<a class="is-active" href="./search.html">搜索</a>
+      <a href="./category-hot-drama.html">热播剧集</a>
+<a href="./category-family-life.html">家庭伦理</a>
+<a href="./category-romance-youth.html">爱情青春</a>
+<a href="./category-suspense-detective.html">悬疑探案</a>
+<a href="./category-sci-fi-fantasy.html">科幻奇幻</a>
+<a href="./category-action-adventure.html">动作冒险</a>
+<a href="./category-comedy-healing.html">喜剧治愈</a>
+<a href="./category-costume-legend.html">古装传奇</a>
+<a href="./category-horror-folk.html">民俗惊悚</a>
+<a href="./category-reality-documentary.html">纪实现实</a>
+<a href="./category-asian-selection.html">亚洲精选</a>
+<a href="./category-global-series.html">海外剧场</a>
+    </div>
+    <form class="mobile-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索片名">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</header>
+<main>
+  <section class="page-hero search-page-hero">
+    <div class="container">
+      <span class="eyebrow">搜索筛选</span>
+      <h1>搜索热门电视剧与高清剧集</h1>
+      <p>输入片名、题材、标签、年份或地区，即可筛选相关内容。</p>
+      <form class="large-search search-page-form" action="./search.html" method="get" data-search-form>
+        <input type="search" name="q" placeholder="例如：悬疑、家庭、日本、2024" autocomplete="off" data-search-input>
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </section>
+  <section class="container page-section">
+    <div class="filter-row" data-filter-row>
+      <button type="button" class="is-active" data-filter="">全部</button>
+      <button type="button" data-filter="热播剧集">热播剧集</button><button type="button" data-filter="家庭伦理">家庭伦理</button><button type="button" data-filter="爱情青春">爱情青春</button><button type="button" data-filter="悬疑探案">悬疑探案</button><button type="button" data-filter="科幻奇幻">科幻奇幻</button><button type="button" data-filter="动作冒险">动作冒险</button><button type="button" data-filter="喜剧治愈">喜剧治愈</button><button type="button" data-filter="古装传奇">古装传奇</button>
+    </div>
+    <div class="search-status" data-search-status>推荐内容</div>
+    <div class="movie-grid" data-search-results>
+      <article class="movie-card">
+  <a class="poster-link" href="./movie-1538.html" aria-label="观看婚礼大联蒙">
+    <img src="./38.jpg" alt="婚礼大联蒙" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">爱情青春</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-1538.html">婚礼大联蒙</a></h3>
+    <p class="card-desc">三对新人在同一酒店办婚礼,新郎全被送错房间,一场爆笑的“换妻”闹剧上演。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>88.3万</span>
+      <span>2025</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-1084.html" aria-label="观看芝士伙伴">
+    <img src="./34.jpg" alt="芝士伙伴" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">亚洲精选</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-1084.html">芝士伙伴</a></h3>
+    <p class="card-desc">五个失业的便利店夜班店员,用即将过期的芝士和面包,开了一家只在午夜营业的披萨店。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>88.2万</span>
+      <span>2024</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-1714.html" aria-label="观看不能就这样死去">
+    <img src="./64.jpg" alt="不能就这样死去" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">纪实现实</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-1714.html">不能就这样死去</a></h3>
+    <p class="card-desc">一个被连环杀手杀死的女人复活了,但不是一次,而是一百次——每次死亡都会让她回到24小时前,并多出一段凶手的记忆。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>87.9万</span>
+      <span>2025</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-0435.html" aria-label="观看青春京剧社">
+    <img src="./135.jpg" alt="青春京剧社" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">热播剧集</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-0435.html">青春京剧社</a></h3>
+    <p class="card-desc">一名玩说唱的高中生为了学分被迫加入濒临解散的京剧社,却意外发现京剧的flow比说唱还难。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>84.1万</span>
+      <span>2024</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-1065.html" aria-label="观看为玛格利特朗读">
+    <img src="./15.jpg" alt="为玛格利特朗读" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">爱情青春</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-1065.html">为玛格利特朗读</a></h3>
+    <p class="card-desc">一个粗犷的园丁在公园里为95岁的前文学教授朗读,意外治愈了彼此孤独的灵魂。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>83.8万</span>
+      <span>2025</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-0611.html" aria-label="观看金蛋宝鸭">
+    <img src="./11.jpg" alt="金蛋宝鸭" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">家庭伦理</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-0611.html">金蛋宝鸭</a></h3>
+    <p class="card-desc">一个会下金蛋的宝鸭被贪心商人偷走后,小镇少年和一只会说话的看门狗踏上了一场找回“幸福本质”的奇幻之旅。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>83.8万</span>
+      <span>2027</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-0157.html" aria-label="观看毕业第一年">
+    <img src="./7.jpg" alt="毕业第一年" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">热播剧集</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-0157.html">毕业第一年</a></h3>
+    <p class="card-desc">三个二本毕业生在北京合租的第一年,交不起房租、找不到方向,还捡了一个孩子。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>83.7万</span>
+      <span>2024</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-1695.html" aria-label="观看新扎僵尸追女仔">
+    <img src="./45.jpg" alt="新扎僵尸追女仔" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">民俗惊悚</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-1695.html">新扎僵尸追女仔</a></h3>
+    <p class="card-desc">一个刚考上的警员被僵尸咬了一口,为了不变成怪物,他必须在月圆之夜前泡到一个纯情处女。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>83.6万</span>
+      <span>1992</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-1241.html" aria-label="观看一子错">
+    <img src="./41.jpg" alt="一子错" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">动作冒险</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-1241.html">一子错</a></h3>
+    <p class="card-desc">一名落魄象棋大师在帮派火并中下了一步“悔棋”,竟导致整个地下势力重新洗牌。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>83.5万</span>
+      <span>2024</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-0787.html" aria-label="观看赤焰战场2">
+    <img src="./37.jpg" alt="赤焰战场2" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">动作冒险</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-0787.html">赤焰战场2</a></h3>
+    <p class="card-desc">一家养老院里,三位退休的顶级杀手发现他们的降压药其实是引爆核弹的触发器。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>83.4万</span>
+      <span>2024</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-1871.html" aria-label="观看果实">
+    <img src="./71.jpg" alt="果实" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">亚洲精选</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-1871.html">果实</a></h3>
+    <p class="card-desc">一种能让人永不饥饿的超级果实被研发出来,但食用它的人,将逐渐丧失所有情感记忆。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>83.2万</span>
+      <span>2029</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-1417.html" aria-label="观看雪地黄金犬2">
+    <img src="./67.jpg" alt="雪地黄金犬2" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">家庭伦理</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-1417.html">雪地黄金犬2</a></h3>
+    <p class="card-desc">多年前那只拯救男孩的雪橇犬白牙,它的后代“小旋风”即将带领新的小主人穿越暴风雪寻找救援。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>83.1万</span>
+      <span>1996</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-0138.html" aria-label="观看牺牲存妇节">
+    <img src="./138.jpg" alt="牺牲存妇节" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">民俗惊悚</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-0138.html">牺牲存妇节</a></h3>
+    <p class="card-desc">民国村庄里,唯一活着的贞节牌坊“活牌坊”被发现吊死在牌坊上,全村男人都有嫌疑。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>79.3万</span>
+      <span>2025</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-0768.html" aria-label="观看人狼1999">
+    <img src="./18.jpg" alt="人狼1999" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">悬疑探案</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-0768.html">人狼1999</a></h3>
+    <p class="card-desc">泡沫经济破裂后的日本,政府用穿着装甲服的“人狼”镇压暴徒,但其中一个“人狼”爱上了“敌人”。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>79.1万</span>
+      <span>1999</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-0314.html" aria-label="观看恶魔游戏2024">
+    <img src="./14.jpg" alt="恶魔游戏2024" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">亚洲精选</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-0314.html">恶魔游戏2024</a></h3>
+    <p class="card-desc">下载了一款“恶魔游戏”App,每完成一个任务获得一百万,但拒绝的人会被规则吞噬。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>79.0万</span>
+      <span>2024</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-1398.html" aria-label="观看电话祈祷">
+    <img src="./48.jpg" alt="电话祈祷" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">民俗惊悚</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-1398.html">电话祈祷</a></h3>
+    <p class="card-desc">一只被遗弃的老式转盘电话,打出去的每个号码都会接通到三十年前的同一天,而那一天必须有人死。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>78.8万</span>
+      <span>2024</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-0944.html" aria-label="观看枪之子">
+    <img src="./44.jpg" alt="枪之子" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">海外剧场</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-0944.html">枪之子</a></h3>
+    <p class="card-desc">澳洲最年轻的枪械走私天才落网后供出所有上线,只为保护自己三岁的儿子不再碰枪。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>78.7万</span>
+      <span>2015</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-1574.html" aria-label="观看湘行漫记">
+    <img src="./74.jpg" alt="湘行漫记" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">纪实现实</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-1574.html">湘行漫记</a></h3>
+    <p class="card-desc">在北京送外卖的凤凰古城青年,替一位独居老人送一封1949年的家书回湘西,沿着沈从文的航线,重走“湘行散记”之路。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>78.4万</span>
+      <span>2025</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-0295.html" aria-label="观看身在其中">
+    <img src="./145.jpg" alt="身在其中" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">民俗惊悚</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-0295.html">身在其中</a></h3>
+    <p class="card-desc">暴风雪夜,一名临产孕妇被一个自称“助产士”的黑衣女人困在家里,对方只要孩子。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>74.6万</span>
+      <span>2026</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-0925.html" aria-label="观看一缕婴魂">
+    <img src="./25.jpg" alt="一缕婴魂" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">亚洲精选</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-0925.html">一缕婴魂</a></h3>
+    <p class="card-desc">妇产科护士偷偷帮人堕胎,三年后,她身边每一个接触过那些胎儿的人,都开始婴灵缠身。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>74.3万</span>
+      <span>2024</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-0471.html" aria-label="观看暗杀沙皇">
+    <img src="./21.jpg" alt="暗杀沙皇" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">古装传奇</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-0471.html">暗杀沙皇</a></h3>
+    <p class="card-desc">1904年冬,一群无政府主义者计划炸死沙皇,却不知刺客中混入了沙皇的私生子。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>74.3万</span>
+      <span>2025</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-0017.html" aria-label="观看战地奇女子">
+    <img src="./17.jpg" alt="战地奇女子" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">海外剧场</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-0017.html">战地奇女子</a></h3>
+    <p class="card-desc">二战东线战场,一位曾在大学主修芭蕾的苏联女学生,转型为令德军闻风丧胆的女狙击王,却只想找回恋人的尸体。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>74.2万</span>
+      <span>2024</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-1555.html" aria-label="观看完美母亲">
+    <img src="./55.jpg" alt="完美母亲" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">悬疑探案</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-1555.html">完美母亲</a></h3>
+    <p class="card-desc">一个被全社区誉为“完美母亲”的女人,为了让自己平庸的女儿考上常春藤,开始清除女儿身边所有“不够好”的朋友。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>74.1万</span>
+      <span>2020</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-1101.html" aria-label="观看错误的世界">
+    <img src="./51.jpg" alt="错误的世界" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">科幻奇幻</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-1101.html">错误的世界</a></h3>
+    <p class="card-desc">一种新药可以“修复”人生中最错误的决定,但服药者陆续消失,官方说他们本来就不存在。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>74.0万</span>
+      <span>2026</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-0647.html" aria-label="观看性手枪美国放浪行">
+    <img src="./47.jpg" alt="性手枪美国放浪行" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">海外剧场</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-0647.html">性手枪美国放浪行</a></h3>
+    <p class="card-desc">1978年性手枪美国巡演,每场都在台上被观众扔酒瓶,台下被媒体围剿。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>73.9万</span>
+      <span>2023</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-1731.html" aria-label="观看鬼哭神嚎8:灵异鬼现">
+    <img src="./81.jpg" alt="鬼哭神嚎8:灵异鬼现" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">纪实现实</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-1731.html">鬼哭神嚎8:灵异鬼现</a></h3>
+    <p class="card-desc">网红灵媒潜入海洋大道112号直播通灵,不料召唤出的是前七部电影所有死者的集体怨念。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>73.7万</span>
+      <span>2024</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-1277.html" aria-label="观看月亮宝石">
+    <img src="./77.jpg" alt="月亮宝石" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">动作冒险</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-1277.html">月亮宝石</a></h3>
+    <p class="card-desc">一颗被诅咒的印度宝石失踪后,围绕它的每个人都接连遭遇不幸。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>73.6万</span>
+      <span>2023</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-1907.html" aria-label="观看暗影特工">
+    <img src="./107.jpg" alt="暗影特工" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">海外剧场</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-1907.html">暗影特工</a></h3>
+    <p class="card-desc">一名被组织抛弃的“幽灵”特工,在亡命天涯时发现,清除他的命令,竟然来自未来的他自己。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>73.4万</span>
+      <span>2025</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-0628.html" aria-label="观看记忆风暴">
+    <img src="./28.jpg" alt="记忆风暴" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">科幻奇幻</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-0628.html">记忆风暴</a></h3>
+    <p class="card-desc">一个专门为罪犯删除记忆的神秘特工,某天醒来发现自己的记忆被人换了,而他现在的身份是追杀目标。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>69.6万</span>
+      <span>2012</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-0174.html" aria-label="观看凤凰号">
+    <img src="./24.jpg" alt="凤凰号" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">科幻奇幻</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-0174.html">凤凰号</a></h3>
+    <p class="card-desc">末世洪水吞没大陆,一艘名为“凤凰号”的方舟成为最后希望,但登船资格却由暗黑算法决定。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>69.5万</span>
+      <span>2025</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-1258.html" aria-label="观看狄斯尼交响曲">
+    <img src="./58.jpg" alt="狄斯尼交响曲" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">科幻奇幻</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-1258.html">狄斯尼交响曲</a></h3>
+    <p class="card-desc">没有一句台词,一百分钟古典乐串联起二十个迪士尼经典角色的破碎重组梦境。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>69.3万</span>
+      <span>2026</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-0804.html" aria-label="观看死亡占卜">
+    <img src="./54.jpg" alt="死亡占卜" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">民俗惊悚</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-0804.html">死亡占卜</a></h3>
+    <p class="card-desc">六个学生在废弃精神病院玩通灵板,召唤出的“灵体”说出了只有死人知道的秘密。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>69.2万</span>
+      <span>2024</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-1888.html" aria-label="观看超级仓鼠2">
+    <img src="./88.jpg" alt="超级仓鼠2" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">动作冒险</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-1888.html">超级仓鼠2</a></h3>
+    <p class="card-desc">上一部拯救了城市后,仓鼠队长被政府秘密改造,这次要面对的是“超级猫军团”。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>69.0万</span>
+      <span>2025</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-1434.html" aria-label="观看总是有爱在隔离">
+    <img src="./84.jpg" alt="总是有爱在隔离" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">喜剧治愈</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-1434.html">总是有爱在隔离</a></h3>
+    <p class="card-desc">一个隔离酒店里,八组陌生人被迫共处14天,从互相陷害到联手逃出“隔离地狱”。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>68.9万</span>
+      <span>2024</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-0155.html" aria-label="观看夏日的星期天">
+    <img src="./5.jpg" alt="夏日的星期天" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">亚洲精选</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-0155.html">夏日的星期天</a></h3>
+    <p class="card-desc">1978年长崎的某个星期天,一对即将分离的恋人在电车站度过了最后一个下午。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>65.1万</span>
+      <span>1978</span>
+    </div>
+  </div>
+</article><article class="movie-card">
+  <a class="poster-link" href="./movie-0785.html" aria-label="观看没完没了">
+    <img src="./35.jpg" alt="没完没了" loading="lazy">
+    <span class="poster-shade"></span>
+    <span class="play-dot">▶</span>
+    <span class="poster-badge">科幻奇幻</span>
+  </a>
+  <div class="card-body">
+    <h3><a href="./movie-0785.html">没完没了</a></h3>
+    <p class="card-desc">一个在便利店上夜班的女孩,发现自己被困在同一天里,而打破循环的关键,是找出每天午夜准时死在店里的那个流浪汉的真实身份。</p>
+    <div class="card-meta">
+      <span>★ 4.9</span>
+      <span>64.8万</span>
+      <span>2024</span>
+    </div>
+  </div>
+</article>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a class="footer-logo" href="./index.html">高清剧集大全</a>
+    <div class="footer-nav">
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类</a>
+      <a href="./ranking.html">排行榜</a>
+      <a href="./search.html">搜索</a>
+    </div>
+    <p>高清剧集大全 · 热播剧集片库 · 全集高清在线播放</p>
+  </div>
+</footer>
+<script src="./assets/search-index.js"></script>
+<script src="./assets/site.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
